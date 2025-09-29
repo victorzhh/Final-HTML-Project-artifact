@@ -3,14 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Climate Change Petition</title>
+    <title>Climate Change Survey</title>
 </head>
-<body>
-    <h1>Save the Planet</h1>
+<body style="background-color: lightgreen">
+    <h1 style="color: red">Climate Change Survey</h1>
     <blockquote cite="https://curious.earth/blog/climate-change-quotes/">
         <b>"Climate change is the greatest threat to our existence</b> in our short history on this planet. Nobody’s going to buy their way out of its effects.”
     </blockquote>
+    <br>
 
-    <img src="climatechange1.jpg" alt="dog meme" width="200" height="400">
+    <p><em>Clicking on each image leads to a link</em></p>
+
+    <!--Adds the first image to the survey webpage-->
+    <a href="https://en.wikipedia.org/wiki/Climate_change"></a>
+        <img src="images/climatechange1.jpg" alt="dead earth">
+    <br><br><br>
+    
+    <form action="results.html" method="get">
+        <b><em><label for="name">Name:</label></em></b>
+            <input type="text" id="name" name="name" placeholder="your name">
+        <br><br>
+
+        <p><b><em>Do you think climate change is real?</em></b></p>
+            <label for="yes">Yes:</label>
+            <input type="radio" id="yes" name="real_choice" value="yes">
+        <br>
+            <label for="no">No:</label>
+            <input type="radio" id="no" name="real_choice" value="no">
+        <br>
+            <label for="not_sure">Not Sure:</label>
+            <input type="radio" id="not_sure" name="real_choice" value="not_sure">
+        <br><br><br>
+
+        <b><em><label for="age">How many years do you think we have left to reverse climate change?:</label></em></b>
+            <input type="text" id="years" name="years" placeholder="answer here">
+        <br><br><br>
+
+        <b><em><label for="who" required>Choose which group you think contributes the most to climate change:</label></em></b>
+            <select id="who" name="who">
+                <option value="corporations">Corporations</option>
+                <option value="citizens">Citizens</option>
+                <option value="governments">Governments</option>
+            </select>
+        <br><br><br>
+
+        <b><em><label for="answer" required>Type a sentence or two about your thoughts on climate change:</label></em></b>
+        <br>
+            <textarea name="answer" rows="10" cols="30" placeholder="type here"></textarea>
+        <br><br>
+
+        <b><em><label for="color"> Select the color that you think is most connected to climate change:</label></em></b> 
+            <input type="color" id="color" name="color">
+        <br><br>
+
+        <p><b><em>Select all the changes that you think have to be done to save the planet:</em></b></p>
+            <input type="checkbox" id="changes1" name="changes" value="emissions_cap"></input>
+            <label for="changes1">Create an emissions cap</label><br>
+            <input type="checkbox" id="changes2" name="changes" value="renewable_energy"></input>
+            <label for="changes2">Change to renewable sources of energy</label><br>
+            <input type="checkbox" id="changes3" name="changes" value="decrease_deforestation"></input>
+            <label for="changes3">Decrease deforestation</label>
+        <br><br><br>
+
+        <input type="submit">
+    </form>
+    <br>
+
+    <!--Adds the second image to the survey webpage-->
+    <a href="https://www.un.org/en/actnow/ten-actions"></a>
+        <img src="images/climatechange2.jpg" alt="earth on fire">
 </body>
 </html>
